@@ -1,0 +1,5 @@
+---
+applications:
+ - name: pathfind001
+   random-route: true
+memory: 128M
