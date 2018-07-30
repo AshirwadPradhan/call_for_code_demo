@@ -26,7 +26,7 @@ def gen_token():
     print(token)
 
     # Grant access to Video
-    grant = VideoGrant(room='test room')
+    grant = VideoGrant()
     token.add_grant(grant)
 
     # Serialize the token as a JWT
