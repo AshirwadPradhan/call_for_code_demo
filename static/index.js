@@ -123,7 +123,7 @@ function roomJoined(room){
   // Once the LocalParticipant leaves the room, detach the Tracks
   // of all Participants, including that of the LocalParticipant.
   room.on('disconnected', function() {
-    log('Left');
+    log('Left the room');
     if (previewTracks) {
       previewTracks.forEach(function(track) {
         track.stop();

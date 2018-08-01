@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+body{
+    padding-top: 70px;
+}
+
+#log{
+    text-align: left;
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 500px;
+}
+
+#log p {
+    color: #686865;
+    font-family: 'Share Tech Mono', 'Courier New', Courier, fixed-width;
+    font-size: 1em;
+    line-height: 1.25em;
+}
