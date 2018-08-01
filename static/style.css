@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 body{
-    padding-top: 70px;
+    padding-top: 7em;
 }
 
 #log{
@@ -54,12 +54,12 @@ body{
 }
 
 #button-leave{
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     display: none;
 }
 
 #button-join{
-    margin-top: 2.5em;
+    margin-top: 1em;
 }
 
 #button-preview{
