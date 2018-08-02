@@ -69,3 +69,15 @@ body{
 #room-controls{
     margin-top: 2em;
 }
+
+p#logw{
+    color: #686865;
+    font-family: 'Share Tech Mono', 'Courier New', Courier, fixed-width;
+    font-size: 1em;
+}
+
+#nav-logo{
+    padding: 0.5em; 
+    font-weight: 600;
+    font-family: 'Share Tech Mono', 'Courier New', Courier, fixed-width;
+}
