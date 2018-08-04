@@ -7,6 +7,32 @@ var previewTracks;
 var identity;
 var roomName;
 
+var platform = new H.service.Platform({
+  'app_id': 'mmnvEw8SVZY1qoNq6QTh',
+  'app_code': 'TjIWodraoAwioxFzgIqEKg'
+});
+
+// Obtain the default map types from the platform object:
+var defaultLayers = platform.createDefaultLayers();
+
+// Instantiate (and display) a map object:
+var map = new H.Map(
+  document.getElementById('mapContainer'),
+  defaultLayers.normal.map,
+  {
+    zoom: 10,
+    center: { lat: 22.5, lng: 88.3 }
+  });
+
+  var ui = H.ui.UI.createDefault(map, defaultLayers, 'en-US');
+
+  var bubble = new H.ui.InfoBubble({ lat: 22.5, lng: 88.3 }, {
+    content: '<b>Kolkata</b>'
+   });
+
+// Add info bubble to the UI:
+ui.addBubble(bubble);
+
 //Attach the tracks to the DOM.
 function attachTracks(tracks, container){
     tracks.forEach(function(track){

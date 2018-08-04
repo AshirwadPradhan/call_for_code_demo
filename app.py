@@ -23,7 +23,7 @@ def gen_token():
 
     # Set the Identity of this token
     token.identity = fake.user_name()
-    print(token)
+    # print(token)
 
     # Grant access to Video
     grant = VideoGrant()
